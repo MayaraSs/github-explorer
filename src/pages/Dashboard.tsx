@@ -1,21 +1,21 @@
-function App() {
+import { Link } from "react-router-dom";
+
+const Dashboard = () => {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Página Inicial</h1>
+      <nav>
+        <ul>
+          <li>
+            <Link to='/'>Home</Link>
+          </li>
+          <li>
+            <Link to='/usuario'>Usuario</Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
-}
+};
 
-export default App;
+export default Dashboard;
