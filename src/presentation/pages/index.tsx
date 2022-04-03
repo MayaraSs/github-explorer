@@ -53,13 +53,21 @@ const Profile = ({ userProfile }: any) => {
 
   return (
     <ProfileInfo>
+      <div className="content-profile">
+
       <img className='avatar' src={userProfile.avatarUrl} alt='profile' />
       <span>Usuário: {userProfile.login}</span>
       <span>Nome: {userProfile.name}</span>
+      
+      </div>
       {repos &&
         repos.length > 0 &&
         repos.map((repo, i) => {
-          return (<span key={i}>{repo['name']}</span>)
+          return (
+          <div>
+            <span key={i}>{i +1} - {repo['name']}</span>
+          </div>
+          )
         })}
     </ProfileInfo>
   );

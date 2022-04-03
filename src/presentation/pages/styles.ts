@@ -16,9 +16,15 @@ export const ProfileInfo = styled.div`
   background-color: #fff;
   border-radius: 10px;
   margin: 40px;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   padding: 5px 20px;
+
+  .content-profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 
   .avatar {
     width: 80px;
