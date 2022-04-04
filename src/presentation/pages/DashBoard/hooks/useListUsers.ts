@@ -1,4 +1,4 @@
-import api from "../../../infra/api";
+import api from "../../../../infra/api";
 
 export const getReposByUser = async (url: string): Promise<any> => {
   try {
