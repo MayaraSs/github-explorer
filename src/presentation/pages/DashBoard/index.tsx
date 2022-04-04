@@ -4,6 +4,7 @@ import { Container } from "./styles";
 import { Search } from "./components/Search";
 import { Profile } from "./components/ProfileInformation";
 
+
 type User = {
   name: string;
   avatarUrl: string;
@@ -14,11 +15,11 @@ type User = {
 };
 
 
-
 const Dashboard = () => {
   const [userProfile, setUserProfile] = useState<User>();
   const [searchedName, setSearchName] = useState<string>('');
-
+  
+  
   const getUserInformationAction = async () => {
     const data = await getUserInfo(searchedName);
     setUserProfile({
@@ -35,6 +36,7 @@ const Dashboard = () => {
     <Container>
       <Search onSearch={getUserInformationAction} onChange={setSearchName} value={searchedName  } />
       {userProfile && <Profile userProfile={userProfile} />}
+  
     </Container>
   );
 };
