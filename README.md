@@ -27,4 +27,4 @@ Clone o repositórios
 
 - [x] Subir o projeto no github
 
-- [x] Subir o projeto no vercel [URL](https://github-explorer-puce-zeta.vercel.app/)
+- [x] Deploy do projeto no vercel [URL - GitHubExplorer](https://github-explorer-puce-zeta.vercel.app/)
